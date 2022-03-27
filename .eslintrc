@@ -5,5 +5,10 @@
     "node": true,
     "es6": true,
     "jest": true
+  },
+  "rules": {
+    "no-underscore-dangle": ["allow", ["_id"]],
+    "no-use-before-define": ["error", { "functions": false }],
+    "semi": [2, "always"]
   }
 }

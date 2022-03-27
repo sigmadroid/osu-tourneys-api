@@ -1,9 +1,7 @@
-![example workflow](https://github.com/rzgry/Express-REST-API-Template/actions/workflows/node.js.yml/badge.svg)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+# osu! Tourneys API
 
-# Express-REST-API-Template
-
-Simple express boilerplate based off of [express-generator](https://expressjs.com/en/starter/generator.html). Includes [eslint](https://eslint.org) and [prettier](https://prettier.io) for linting/code formatting, [nodemon](https://github.com/remy/nodemon) for automatic server restarting, and [Jest](https://jestjs.io) for testing.
+An NodeJS + Express aplication to provide data for _osu! Tourneys_ application
+Based off of [express-REST-API-Template](https://github.com/rzgry/Express-REST-API-Templatel)
 
 ## Getting Started
 
@@ -17,6 +15,11 @@ npm install
 
 ```
 npm run dev
+```
+
+### Running in development (Windows)
+```
+npm run dev-w
 ```
 
 ### Running in production

@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "month": {
+            "enum": [
+                "january",
+                "february",
+                "march",
+                "april",
+                "may",
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november",
+                "december"
+            ]
+        },
+        "utcOffset": {
+            "type": "number"
+        },
+        "year": {
+            "type": "number",
+            "minimum": 1
+        }
+    },
+    "required": ["month"],
+    "additionalProperties": false
+}
