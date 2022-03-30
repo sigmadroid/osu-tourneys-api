@@ -1,9 +1,8 @@
-// Unit under test
-const awsData = require('./aws');
-
 // Required to test
 const sinon = require('sinon');
-const AWS = require('aws-sdk-mock');
+
+// Unit under test
+const awsData = require('./aws');
 
 describe('aws data', () => {
     describe('.getSecret()', () => {
@@ -22,7 +21,7 @@ describe('aws data', () => {
 
                 return awsData.getSecret('secret-value')
                     .then(() => {
-                        throw 'should have throw an error';
+                        throw new Error('should have throw an error');
                     })
                     .catch(error => {
                         expect(error).toEqual(new Error('BOOM!'));

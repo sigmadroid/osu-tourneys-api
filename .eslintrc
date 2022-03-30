@@ -7,7 +7,7 @@
     "jest": true
   },
   "rules": {
-    "no-underscore-dangle": ["allow", ["_id"]],
+    "no-underscore-dangle": [2, { "allow": ["_id"] }],
     "no-use-before-define": ["error", { "functions": false }],
     "semi": [2, "always"]
   }
